@@ -9,16 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-brand">Kumar Baibhav</div>
+            <div class="nav-brand">
+                <span class="brand-text">Kumar</span>
+                <span class="brand-accent">Baibhav</span>
+            </div>
             <div class="nav-menu">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#home" class="nav-link active" data-text="Home">Home</a>
+                <a href="#about" class="nav-link" data-text="About">About</a>
+                <a href="#experience" class="nav-link" data-text="Experience">Experience</a>
+                <a href="#projects" class="nav-link" data-text="Projects">Projects</a>
+                <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
             </div>
             <div class="nav-toggle">
                 <span></span>
@@ -30,71 +37,75 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="shape shape-4"></div>
-            </div>
+        <div class="hero-bg">
+            <div class="particles"></div>
         </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    Building Intelligent 
-                    <span class="gradient-text">AI Systems</span>
-                    That Drive Business Value
-                </h1>
-                <p class="hero-description">
-                    AI/ML Engineer with expertise in production-grade systems, RAG pipelines, and intelligent assistants. 
-                    Proven track record of <strong>$800K revenue generation</strong> and <strong>80% cost reduction</strong>.
-                </p>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-number">4.0</div>
-                        <div class="stat-label">Perfect GPA</div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-code"></i>
+                        <span>Available for new opportunities</span>
                     </div>
-                    <div class="stat">
-                        <div class="stat-number">$800K</div>
-                        <div class="stat-label">Revenue Impact</div>
+                    <h1 class="hero-title">
+                        Building 
+                        <span class="text-gradient">Intelligent AI</span><br>
+                        Systems That Drive<br>
+                        <span class="text-accent">Business Value</span>
+                    </h1>
+                    <p class="hero-description">
+                        AI/ML Engineer with expertise in production-grade systems, RAG pipelines, 
+                        and intelligent assistants. Proven track record of <strong>$800K revenue generation</strong> 
+                        and <strong>80% cost reduction</strong> through innovative AI solutions.
+                    </p>
+                    <div class="hero-metrics">
+                        <div class="metric">
+                            <div class="metric-value">4.0</div>
+                            <div class="metric-label">Perfect GPA</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">$800K</div>
+                            <div class="metric-label">Revenue Impact</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">80%</div>
+                            <div class="metric-label">Cost Reduction</div>
+                        </div>
                     </div>
-                    <div class="stat">
-                        <div class="stat-number">80%</div>
-                        <div class="stat-label">Cost Reduction</div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://github.com/kumarbaibhav6/Portfolio/blob/main/Kumar_Baibhav_Resume.pdf" target="_blank" class="btn btn-outline">
+                            <span>Download Resume</span>
+                            <i class="fas fa-download"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-rocket"></i>
-                        View My Work
-                    </a>
-                    <a href="https://github.com/kumarbaibhav6/Portfolio/blob/main/Kumar_Baibhav_Resume.pdf" target="_blank" class="btn btn-secondary">
-                        <i class="fas fa-download"></i>
-                        Download Resume
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-card-inner">
-                        <img src="images/profile.jpg" alt="Kumar Baibhav" class="profile-img">
+                <div class="hero-visual">
+                    <div class="profile-container">
+                        <div class="profile-bg"></div>
+                        <img src="images/profile.jpg" alt="Kumar Baibhav" class="profile-image">
                         <div class="profile-info">
-                            <h3>Kumar Baibhav</h3>
-                            <p>Software Engineer AI/ML</p>
-                            <div class="location">
-                                <i class="fas fa-map-marker-alt"></i>
-                                Buffalo, NY
-                            </div>
-                            <div class="social-links">
-                                <a href="mailto:baibhav06june@gmail.com" target="_blank">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a href="https://linkedin.com/in/kumarbaibhav66" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a href="https://github.com/kumarbaibhav6" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
+                            <div class="profile-card">
+                                <h3>Kumar Baibhav</h3>
+                                <p>Software Engineer AI/ML</p>
+                                <div class="location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    Buffalo, NY
+                                </div>
+                                <div class="social-icons">
+                                    <a href="mailto:baibhav06june@gmail.com" class="social-link">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                    <a href="https://linkedin.com/in/kumarbaibhav66" target="_blank" class="social-link">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://github.com/kumarbaibhav6" target="_blank" class="social-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -107,57 +118,119 @@
     <section id="about" class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Transforming complex data into actionable business insights</p>
+                <div class="section-tag">About Me</div>
+                <h2 class="section-title">Transforming Data Into Intelligence</h2>
+                <p class="section-subtitle">
+                    Passionate about building AI systems that solve real-world problems and drive measurable business impact
+                </p>
             </div>
             
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate AI/ML Engineer specializing in building production-grade machine learning systems 
-                        and intelligent assistants. With a perfect 4.0 GPA from the University at Buffalo's Data Science 
-                        program, I excel at developing end-to-end ML pipelines, deploying scalable AI applications, and 
-                        transforming complex data into actionable business insights.
-                    </p>
-                    <p>
-                        My expertise spans from time series forecasting and NLP to generative AI and RAG-powered assistants. 
-                        I've delivered impactful solutions across retail, healthcare, and fintech domains, consistently 
-                        driving real business value through intelligent automation.
-                    </p>
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm an AI/ML Engineer who specializes in turning complex data challenges into intelligent, 
+                            production-ready solutions. With a perfect 4.0 GPA from the University at Buffalo's Data Science 
+                            program, I combine strong theoretical foundations with practical implementation expertise.
+                        </p>
+                        <p>
+                            My work spans the entire ML lifecycle - from data engineering and model development to deployment 
+                            and monitoring. I've delivered solutions that generated <strong>$800K in revenue</strong> and 
+                            reduced operational costs by <strong>80%</strong> across retail, healthcare, and fintech domains.
+                        </p>
+                    </div>
+                    
+                    <div class="skills-showcase">
+                        <div class="skill-group">
+                            <div class="skill-header">
+                                <i class="fas fa-brain"></i>
+                                <h4>AI & Machine Learning</h4>
+                            </div>
+                            <div class="skill-items">
+                                <span class="skill-item">Python</span>
+                                <span class="skill-item">TensorFlow</span>
+                                <span class="skill-item">PyTorch</span>
+                                <span class="skill-item">LangChain</span>
+                                <span class="skill-item">OpenAI</span>
+                                <span class="skill-item">RAG</span>
+                                <span class="skill-item">NLP</span>
+                                <span class="skill-item">Computer Vision</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-group">
+                            <div class="skill-header">
+                                <i class="fas fa-cloud"></i>
+                                <h4>Cloud & Infrastructure</h4>
+                            </div>
+                            <div class="skill-items">
+                                <span class="skill-item">AWS</span>
+                                <span class="skill-item">Docker</span>
+                                <span class="skill-item">Kubernetes</span>
+                                <span class="skill-item">FastAPI</span>
+                                <span class="skill-item">CI/CD</span>
+                                <span class="skill-item">Linux</span>
+                                <span class="skill-item">Redis</span>
+                                <span class="skill-item">PostgreSQL</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-group">
+                            <div class="skill-header">
+                                <i class="fas fa-chart-line"></i>
+                                <h4>Data & Analytics</h4>
+                            </div>
+                            <div class="skill-items">
+                                <span class="skill-item">PySpark</span>
+                                <span class="skill-item">Databricks</span>
+                                <span class="skill-item">MLFlow</span>
+                                <span class="skill-item">Airflow</span>
+                                <span class="skill-item">Pandas</span>
+                                <span class="skill-item">NumPy</span>
+                                <span class="skill-item">Scikit-learn</span>
+                                <span class="skill-item">Time Series</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="skills-section">
-                    <div class="skill-category">
-                        <h4><i class="fas fa-brain"></i> AI/ML</h4>
-                        <div class="skills-grid">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">LangChain</span>
-                            <span class="skill-tag">OpenAI</span>
-                            <span class="skill-tag">RAG</span>
+                <div class="about-visual">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">$800K</div>
+                                <div class="stat-label">Revenue Generated</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-category">
-                        <h4><i class="fas fa-cloud"></i> Cloud & DevOps</h4>
-                        <div class="skills-grid">
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">Kubernetes</span>
-                            <span class="skill-tag">CI/CD</span>
-                            <span class="skill-tag">FastAPI</span>
-                            <span class="skill-tag">Linux</span>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">80%</div>
+                                <div class="stat-label">Cost Reduction</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill-category">
-                        <h4><i class="fas fa-database"></i> Data & Analytics</h4>
-                        <div class="skills-grid">
-                            <span class="skill-tag">PySpark</span>
-                            <span class="skill-tag">MLFlow</span>
-                            <span class="skill-tag">Databricks</span>
-                            <span class="skill-tag">PostgreSQL</span>
-                            <span class="skill-tag">Redis</span>
-                            <span class="skill-tag">Airflow</span>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">4.0</div>
+                                <div class="stat-label">Perfect GPA</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="stat-content">
+                                <div class="stat-number">40%</div>
+                                <div class="stat-label">Fraud Detection Boost</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -169,77 +242,108 @@
     <section id="experience" class="section section-dark">
         <div class="container">
             <div class="section-header">
+                <div class="section-tag">My Journey</div>
                 <h2 class="section-title">Experience & Education</h2>
-                <p class="section-subtitle">Building the future of AI, one project at a time</p>
+                <p class="section-subtitle">
+                    Building the future of AI through continuous learning and impactful projects
+                </p>
             </div>
 
-            <div class="timeline">
-                <!-- Experience Items -->
-                <div class="timeline-item">
-                    <div class="timeline-marker current"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Feb 2025 - Present</div>
-                        <h3>Software Engineer AI/ML</h3>
-                        <h4>Spillbox • San Jose, CA</h4>
-                        <p>Developed GPT-4o-mini powered AI assistant with RAG pipeline using OpenAI embeddings and FAISS, reducing response time to under 5 seconds and customer support costs by 80%.</p>
-                        <div class="achievements">
-                            <span class="achievement">RAG Pipeline</span>
-                            <span class="achievement">80% Cost Reduction</span>
-                            <span class="achievement">AWS EC2</span>
+            <div class="timeline-container">
+                <div class="timeline">
+                    <div class="timeline-item active">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-badge">Current</div>
+                            <div class="timeline-date">Feb 2025 - Present</div>
+                            <h3>Software Engineer AI/ML</h3>
+                            <h4>Spillbox • San Jose, CA</h4>
+                            <p>
+                                Developed GPT-4o-mini powered AI assistant with RAG pipeline using OpenAI embeddings and FAISS. 
+                                Achieved 80% cost reduction in customer support and sub-5-second response times.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>RAG Pipeline</span>
+                                <span>OpenAI</span>
+                                <span>AWS EC2</span>
+                                <span>FastAPI</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Aug 2024 - Dec 2024</div>
-                        <h3>Data Scientist</h3>
-                        <h4>Baldwin Richardson Foods • Buffalo, NY</h4>
-                        <p>Built time series forecasting models (ARIMA, Prophet) achieving 90% accuracy across 20+ SKUs. Led 4-member team delivering recommendations worth ~$800K revenue opportunity.</p>
-                        <div class="achievements">
-                            <span class="achievement">$800K Revenue</span>
-                            <span class="achievement">Team Leadership</span>
-                            <span class="achievement">90% Accuracy</span>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Aug 2024 - Dec 2024</div>
+                            <h3>Data Scientist</h3>
+                            <h4>Baldwin Richardson Foods • Buffalo, NY</h4>
+                            <p>
+                                Led time series forecasting models achieving 90% accuracy across 20+ SKUs. 
+                                Delivered data-backed recommendations worth ~$800K in revenue opportunity.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Time Series</span>
+                                <span>ARIMA</span>
+                                <span>Prophet</span>
+                                <span>Team Lead</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker education"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Aug 2023 - Dec 2024</div>
-                        <h3>Master of Professional Studies in Data Science</h3>
-                        <h4>University at Buffalo (SUNY)</h4>
-                        <p><strong>GPA: 4.0/4.0</strong> • Machine Learning, Data Mining, Probability & Statistics, Database Management Systems</p>
-                        <div class="achievements">
-                            <span class="achievement gold">Perfect GPA</span>
-                            <span class="achievement gold">Dean's List</span>
+                    <div class="timeline-item education">
+                        <div class="timeline-marker education-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-badge education-badge">Education</div>
+                            <div class="timeline-date">Aug 2023 - Dec 2024</div>
+                            <h3>Master of Professional Studies in Data Science</h3>
+                            <h4>University at Buffalo (SUNY)</h4>
+                            <p>
+                                <strong>GPA: 4.0/4.0</strong> • Perfect academic record with focus on Machine Learning, 
+                                Data Mining, Statistical Analysis, and Database Systems.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Perfect GPA</span>
+                                <span>Dean's List</span>
+                                <span>ML/AI Focus</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Mar 2023 - May 2023</div>
-                        <h3>Data Science Intern</h3>
-                        <h4>StatSkew • Remote</h4>
-                        <p>Increased model accuracy from 60% to 85% through class imbalance handling with SMOTE for insurance prediction models.</p>
-                        <div class="achievements">
-                            <span class="achievement">+25% Accuracy</span>
-                            <span class="achievement">SMOTE</span>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Mar 2023 - May 2023</div>
+                            <h3>Data Science Intern</h3>
+                            <h4>StatSkew • Remote</h4>
+                            <p>
+                                Improved insurance prediction model accuracy from 60% to 85% through advanced 
+                                class imbalance handling techniques and feature engineering.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>SMOTE</span>
+                                <span>Classification</span>
+                                <span>Feature Engineering</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker education"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-date">Jul 2018 - Jun 2022</div>
-                        <h3>Bachelor of Technology in Civil Engineering</h3>
-                        <h4>Manipal Institute of Technology (MAHE)</h4>
-                        <p><strong>GPA: 3.54/4.0</strong> • Engineering Foundation</p>
+                    <div class="timeline-item education">
+                        <div class="timeline-marker education-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-badge education-badge">Education</div>
+                            <div class="timeline-date">Jul 2018 - Jun 2022</div>
+                            <h3>Bachelor of Technology in Civil Engineering</h3>
+                            <h4>Manipal Institute of Technology (MAHE)</h4>
+                            <p>
+                                <strong>GPA: 3.54/4.0</strong> • Strong engineering foundation with focus on 
+                                analytical thinking and problem-solving methodologies.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Engineering</span>
+                                <span>Analytics</span>
+                                <span>Problem Solving</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -250,30 +354,46 @@
     <section id="projects" class="section">
         <div class="container">
             <div class="section-header">
+                <div class="section-tag">Portfolio</div>
                 <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">End-to-end AI/ML solutions with real business impact</p>
+                <p class="section-subtitle">
+                    End-to-end AI/ML solutions demonstrating real-world impact and technical excellence
+                </p>
             </div>
 
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card featured">
                     <div class="project-image">
                         <img src="images/bike-sharing.jpg" alt="Bike Sharing Demand Prediction">
                         <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/kumarbaibhav6/Bike-Sharing-Demand-Prediction" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
+                            <a href="https://github.com/kumarbaibhav6/Bike-Sharing-Demand-Prediction" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-content">
+                        <div class="project-category">Machine Learning • Real-time Systems</div>
                         <h3>Bike Sharing Demand Prediction</h3>
-                        <p>Real-time prediction pipeline using AWS Kinesis and FastAPI with Random Forest model, achieving 90% accuracy and 30% efficiency increase.</p>
-                        <div class="tech-stack">
+                        <p>
+                            Real-time prediction pipeline using AWS Kinesis and FastAPI. Achieved 90% accuracy 
+                            and 30% efficiency improvement in bike allocation through intelligent forecasting.
+                        </p>
+                        <div class="project-tech">
                             <span>Python</span>
-                            <span>AWS</span>
+                            <span>AWS Kinesis</span>
                             <span>FastAPI</span>
                             <span>Random Forest</span>
+                            <span>Streamlit</span>
+                        </div>
+                        <div class="project-metrics">
+                            <div class="metric-item">
+                                <span class="metric-value">90%</span>
+                                <span class="metric-text">Accuracy</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-value">30%</span>
+                                <span class="metric-text">Efficiency Boost</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -282,21 +402,23 @@
                     <div class="project-image">
                         <img src="images/cardio-risk.jpg" alt="Cardiovascular Risk Prediction">
                         <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/kumarbaibhav6/Cardiovascular-Risk-Prediction" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
+                            <a href="https://github.com/kumarbaibhav6/Cardiovascular-Risk-Prediction" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-content">
+                        <div class="project-category">Healthcare • ML Deployment</div>
                         <h3>Cardiovascular Risk Prediction</h3>
-                        <p>Deployed cardiovascular risk prediction model using Random Forest and CatBoost, improving early detection by 60% with real-time Streamlit UI.</p>
-                        <div class="tech-stack">
+                        <p>
+                            Advanced risk assessment model with 60% improvement in early detection. 
+                            Features real-time Streamlit interface and Docker deployment.
+                        </p>
+                        <div class="project-tech">
                             <span>Python</span>
+                            <span>CatBoost</span>
                             <span>Docker</span>
                             <span>Streamlit</span>
-                            <span>CatBoost</span>
                         </div>
                     </div>
                 </div>
@@ -305,17 +427,19 @@
                     <div class="project-image">
                         <img src="images/fraud-detection.jpg" alt="Fraud Detection">
                         <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/kumarbaibhav6/credit-card-fraud" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
+                            <a href="https://github.com/kumarbaibhav6/credit-card-fraud" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Fraud Detection in Credit Card Transactions</h3>
-                        <p>Enhanced fraud detection on 1M+ transactions using PySpark and Databricks, improving identification by 40% through feature engineering.</p>
-                        <div class="tech-stack">
+                        <div class="project-category">Fintech • Big Data</div>
+                        <h3>Fraud Detection System</h3>
+                        <p>
+                            Enhanced fraud detection on 1M+ transactions using PySpark and advanced 
+                            feature engineering. Achieved 40% improvement in detection accuracy.
+                        </p>
+                        <div class="project-tech">
                             <span>PySpark</span>
                             <span>Databricks</span>
                             <span>Random Forest</span>
@@ -328,17 +452,19 @@
                     <div class="project-image">
                         <img src="images/retail-analytics.jpg" alt="Retail Analytics Pipeline">
                         <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/kumarbaibhav6/retail-analytics" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
+                            <a href="https://github.com/kumarbaibhav6/retail-analytics" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-content">
+                        <div class="project-category">Data Engineering • Analytics</div>
                         <h3>Retail Analytics Pipeline</h3>
-                        <p>End-to-end retail analytics pipeline using Apache Airflow and AWS, processing large-scale transaction data for inventory optimization.</p>
-                        <div class="tech-stack">
+                        <p>
+                            End-to-end data pipeline processing large-scale transaction data. 
+                            Automated inventory optimization and customer behavior analysis.
+                        </p>
+                        <div class="project-tech">
                             <span>Apache Airflow</span>
                             <span>AWS</span>
                             <span>ETL</span>
@@ -351,21 +477,23 @@
                     <div class="project-image">
                         <img src="images/agentic-medbot.jpg" alt="Agentic MedBot">
                         <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/kumarbaibhav6/agentic-medbot" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
+                            <a href="https://github.com/kumarbaibhav6/agentic-medbot" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-content">
+                        <div class="project-category">AI Assistant • RAG</div>
                         <h3>Agentic MedBot</h3>
-                        <p>Intelligent medical assistant using GPT-4 and RAG architecture with OpenAI embeddings for accurate medical information retrieval.</p>
-                        <div class="tech-stack">
+                        <p>
+                            Intelligent medical assistant using GPT-4 and RAG architecture. 
+                            Provides accurate medical information retrieval with contextual understanding.
+                        </p>
+                        <div class="project-tech">
                             <span>GPT-4</span>
                             <span>RAG</span>
-                            <span>OpenAI</span>
                             <span>LangChain</span>
+                            <span>OpenAI</span>
                         </div>
                     </div>
                 </div>
@@ -374,17 +502,19 @@
                     <div class="project-image">
                         <img src="images/sentiment-analysis.jpg" alt="Sentiment Analysis">
                         <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="https://github.com/kumarbaibhav6/Sentiment-Analysis" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
+                            <a href="https://github.com/kumarbaibhav6/Sentiment-Analysis" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Sentiment Analysis on Customer Reviews</h3>
-                        <p>Comprehensive sentiment analysis using LSTM and fine-tuned BERT models, achieving 87.5% accuracy in customer review classification.</p>
-                        <div class="tech-stack">
+                        <div class="project-category">NLP • Deep Learning</div>
+                        <h3>Advanced Sentiment Analysis</h3>
+                        <p>
+                            Comprehensive sentiment analysis using LSTM and fine-tuned BERT models. 
+                            Achieved 87.5% accuracy in customer review classification.
+                        </p>
+                        <div class="project-tech">
                             <span>BERT</span>
                             <span>LSTM</span>
                             <span>NLP</span>
@@ -400,11 +530,14 @@
     <section id="contact" class="section section-dark">
         <div class="container">
             <div class="section-header">
+                <div class="section-tag">Get In Touch</div>
                 <h2 class="section-title">Let's Build Something Amazing</h2>
-                <p class="section-subtitle">Ready to transform your data into intelligent solutions</p>
+                <p class="section-subtitle">
+                    Ready to transform your data challenges into intelligent solutions
+                </p>
             </div>
 
-            <div class="contact-content">
+            <div class="contact-grid">
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">
@@ -443,6 +576,17 @@
                         </div>
                     </div>
                 </div>
+                
+                <div class="contact-cta">
+                    <div class="cta-content">
+                        <h3>Ready to collaborate?</h3>
+                        <p>I'm always interested in discussing new opportunities and innovative AI projects.</p>
+                        <a href="mailto:baibhav06june@gmail.com" class="btn btn-primary">
+                            <span>Start a Conversation</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -451,85 +595,153 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Kumar Baibhav. Crafted with passion and code.</p>
+                <div class="footer-brand">
+                    <div class="brand-text">Kumar <span class="brand-accent">Baibhav</span></div>
+                    <p>Building the future of AI, one algorithm at a time.</p>
+                </div>
                 <div class="footer-links">
                     <a href="https://github.com/kumarbaibhav6/Portfolio/blob/main/Kumar_Baibhav_Resume.pdf" target="_blank">Resume</a>
                     <a href="mailto:baibhav06june@gmail.com">Contact</a>
+                    <a href="https://github.com/kumarbaibhav6" target="_blank">GitHub</a>
+                    <a href="https://linkedin.com/in/kumarbaibhav66" target="_blank">LinkedIn</a>
                 </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kumar Baibhav. Crafted with passion and precision.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+        // Enhanced JavaScript with animations and interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Custom cursor
+            const cursor = document.querySelector('.cursor');
+            const cursorFollower = document.querySelector('.cursor-follower');
+            
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+                
+                setTimeout(() => {
+                    cursorFollower.style.left = e.clientX + 'px';
+                    cursorFollower.style.top = e.clientY + 'px';
+                }, 100);
+            });
+
+            // Navbar scroll effect
+            window.addEventListener('scroll', () => {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 100) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
                 });
             });
-        });
 
-        // Navigation active state
-        window.addEventListener('scroll', () => {
-            let current = '';
+            // Active navigation link
             const sections = document.querySelectorAll('section');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= sectionTop - 200) {
-                    current = section.getAttribute('id');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= sectionTop - 200) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // Mobile menu toggle
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                navToggle.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking on a link
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    navToggle.classList.remove('active');
+                });
+            });
+
+            // Particles animation
+            function createParticles() {
+                const particlesContainer = document.querySelector('.particles');
+                for (let i = 0; i < 50; i++) {
+                    const particle = document.createElement('div');
+                    particle.className = 'particle';
+                    particle.style.left = Math.random() * 100 + '%';
+                    particle.style.top = Math.random() * 100 + '%';
+                    particle.style.animationDelay = Math.random() * 3 + 's';
+                    particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
+                    particlesContainer.appendChild(particle);
                 }
+            }
+            createParticles();
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements for animation
+            document.querySelectorAll('.project-card, .timeline-item, .stat-card, .skill-group').forEach(el => {
+                observer.observe(el);
             });
 
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        // Mobile menu toggle
-        const navToggle = document.querySelector('.nav-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-            });
-        });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all project cards and timeline items
-        document.querySelectorAll('.project-card, .timeline-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
+            // Typing effect for hero title
+            const heroTitle = document.querySelector('.hero-title');
+            if (heroTitle) {
+                const text = heroTitle.innerHTML;
+                heroTitle.innerHTML = '';
+                let i = 0;
+                const typeWriter = () => {
+                    if (i < text.length) {
+                        heroTitle.innerHTML += text.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, 50);
+                    }
+                };
+                setTimeout(typeWriter, 1000);
+            }
         });
     </script>
 </body>
