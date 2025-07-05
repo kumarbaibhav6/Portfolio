@@ -49,8 +49,8 @@
                     </div>
                     <h1 class="hero-title">
                         Building 
-                        <span class="text-gradient">Intelligent AI</span><br>
-                        Systems That Drive<br>
+                        <span class="text-gradient">Intelligent AI</span>
+                        Systems That Drive
                         <span class="text-accent">Business Value</span>
                     </h1>
                     <p class="hero-description">
@@ -726,22 +726,6 @@
             document.querySelectorAll('.project-card, .timeline-item, .stat-card, .skill-group').forEach(el => {
                 observer.observe(el);
             });
-
-            // Typing effect for hero title
-            const heroTitle = document.querySelector('.hero-title');
-            if (heroTitle) {
-                const text = heroTitle.innerHTML;
-                heroTitle.innerHTML = '';
-                let i = 0;
-                const typeWriter = () => {
-                    if (i < text.length) {
-                        heroTitle.innerHTML += text.charAt(i);
-                        i++;
-                        setTimeout(typeWriter, 50);
-                    }
-                };
-                setTimeout(typeWriter, 1000);
-            }
         });
     </script>
 </body>
