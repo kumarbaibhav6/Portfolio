@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kumar Baibhav Portfolio</title>
   
-    <!-- External Stylesheet Link (Ensure it's first) -->
+    <!-- External Stylesheet -->
     <link rel="stylesheet" href="style.css">
   
     <!-- Font Awesome for Icons -->
@@ -33,126 +33,124 @@
       <!-- About Section -->
       <section id="about">
         <h2>About</h2>
-        <p>I'm Kumar Baibhav — a Software Engineer specializing in AI/ML with hands-on experience building production-grade machine learning systems and intelligent AI assistants. With a perfect 4.0 GPA from the University at Buffalo's Data Science program, I excel at developing end-to-end ML pipelines, deploying scalable AI applications, and transforming complex data into actionable business insights. My expertise spans from time series forecasting and NLP to generative AI and RAG-powered assistants. I've delivered impactful solutions across retail, healthcare, and fintech domains, leveraging technologies like FastAPI, AWS, Docker, and advanced ML frameworks. From reducing customer support costs by 80% with AI assistants to generating $800K in revenue opportunities through predictive analytics, I build intelligent systems that drive real business value.</p>
+        <p>AI/ML Engineer with expertise in production-grade systems, RAG pipelines, and intelligent assistants. Perfect 4.0 GPA from UB's Data Science program.</p>
       </section>
 
       <!-- Skills Section -->
       <section id="skills">
         <h2>Skills</h2>
         <div class="skills-tags">
-          <span>Python</span><span>R</span><span>PostgreSQL</span><span>AWS</span><span>Machine Learning</span><span>Deep Learning</span>
-          <span>NLP</span><span>Time Series Forecasting</span><span>FastAPI</span><span>Docker</span><span>TensorFlow</span><span>PyTorch</span>
-          <span>Scikit-Learn</span><span>LangChain</span><span>OpenAI</span><span>RAG Pipelines</span><span>MLFlow</span><span>Databricks</span>
-          <span>PySpark</span><span>CI/CD</span><span>Kubernetes</span><span>Linux</span>
+          <span>Python</span><span>AWS</span><span>Machine Learning</span><span>Deep Learning</span>
+          <span>NLP</span><span>FastAPI</span><span>Docker</span><span>TensorFlow</span><span>PyTorch</span>
+          <span>LangChain</span><span>OpenAI</span><span>RAG</span><span>MLFlow</span><span>PySpark</span>
+          <span>CI/CD</span><span>Kubernetes</span>
         </div>
       </section>
 
       <!-- Resume Link -->
       <section id="resume">
         <h2>Resume</h2>
-        <p><a href="https://github.com/kumarbaibhav6/Portfolio/blob/main/Kumar_Baibhav_Resume.pdf" target="_blank">Download My Resume</a></p>
+        <p><a href="https://github.com/kumarbaibhav6/Portfolio/blob/main/Kumar_Baibhav_Resume.pdf" target="_blank" style="color: #3498db; text-decoration: none; font-weight: 500;">Download My Resume →</a></p>
       </section>
     </aside>
 
     <!-- Main Content -->
     <main class="content">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <h1>Building Intelligent AI Systems</h1>
+        <p>Transforming complex data into actionable business insights through cutting-edge AI/ML engineering. From reducing customer support costs by 80% with RAG-powered assistants to generating $800K revenue opportunities through predictive analytics.</p>
+      </section>
+
+      <!-- Experience & Education Grid -->
+      <div class="info-grid">
+        <!-- Work Experience -->
+        <div class="info-section">
+          <h2>Experience</h2>
+          
+          <div class="info-item">
+            <h3>Software Engineer AI/ML - Spillbox</h3>
+            <p class="meta">Feb 2025 - Present • San Jose, CA</p>
+            <p>Developed GPT-4o-mini powered AI assistant with RAG pipeline, reducing response time to under 5 seconds and support costs by 80%.</p>
+          </div>
+
+          <div class="info-item">
+            <h3>Data Scientist - Baldwin Richardson Foods</h3>
+            <p class="meta">Aug 2024 - Dec 2024 • Buffalo, NY</p>
+            <p>Built time series forecasting models achieving 90% accuracy, contributing ~$800K revenue opportunity and 8.5% projected growth.</p>
+          </div>
+
+          <div class="info-item">
+            <h3>Data Science Intern - StatSkew</h3>
+            <p class="meta">Mar 2023 - May 2023 • Remote</p>
+            <p>Increased model accuracy from 60% to 85% through class imbalance handling with SMOTE for insurance prediction models.</p>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="info-section">
+          <h2>Education</h2>
+          
+          <div class="info-item">
+            <h3>Master of Professional Studies in Data Science</h3>
+            <p class="meta">University at Buffalo (SUNY) • Dec 2024</p>
+            <p><strong>GPA: 4.0/4.0</strong><br>
+            Coursework: Machine Learning, Data Mining, Probability & Statistics, Database Management Systems</p>
+          </div>
+
+          <div class="info-item">
+            <h3>Bachelor of Technology in Civil Engineering</h3>
+            <p class="meta">Manipal Institute of Technology (MAHE) • Jun 2022</p>
+            <p><strong>GPA: 3.54/4.0 (8.57/10)</strong></p>
+          </div>
+        </div>
+      </div>
+
       <!-- Projects Section -->
-      <section id="projects">
-        <h2>Projects</h2>
+      <section class="projects-section">
+        <h2>Featured Projects</h2>
         <div class="projects-grid">
-          <!-- Project 1 -->
           <div class="project-card">
             <img src="images/bike-sharing.jpg" alt="Bike Sharing Demand Prediction">
             <h3>Bike Sharing Demand Prediction</h3>
-            <p>Built a real-time prediction pipeline using AWS Kinesis and FastAPI with a hyperparameter-tuned Random Forest model, achieving 90% accuracy and enabling 30% increase in bike reallocation efficiency.</p>
+            <p>Real-time prediction pipeline using AWS Kinesis and FastAPI with Random Forest model, achieving 90% accuracy and 30% efficiency increase.</p>
             <a href="https://github.com/kumarbaibhav6/Bike-Sharing-Demand-Prediction" target="_blank">View on GitHub →</a>
           </div>
 
-          <!-- Project 2 -->
           <div class="project-card">
             <img src="images/cardio-risk.jpg" alt="Cardiovascular Risk Prediction">
             <h3>Cardiovascular Risk Prediction</h3>
-            <p>Developed a cardiovascular risk prediction model using Random Forest, GBM, and CatBoost, improving early detection of high-risk patients by 60% with automated Docker deployment and real-time Streamlit UI.</p>
+            <p>Deployed cardiovascular risk prediction model using Random Forest and CatBoost, improving early detection by 60% with real-time Streamlit UI.</p>
             <a href="https://github.com/kumarbaibhav6/Cardiovascular-Risk-Prediction" target="_blank">View on GitHub →</a>
           </div>
 
-          <!-- Project 3 -->
           <div class="project-card">
-            <img src="images/fraud-detection.jpg" alt="Fraud Detection in Credit Card Transactions">
+            <img src="images/fraud-detection.jpg" alt="Fraud Detection">
             <h3>Fraud Detection in Credit Card Transactions</h3>
-            <p>Enhanced fraud detection on 1M+ transactions using PySpark and Databricks, improving identification of fraudulent transactions by 40% through advanced feature engineering and class imbalance handling.</p>
+            <p>Enhanced fraud detection on 1M+ transactions using PySpark and Databricks, improving identification by 40% through feature engineering.</p>
             <a href="https://github.com/kumarbaibhav6/credit-card-fraud" target="_blank">View on GitHub →</a>
           </div>
 
-          <!-- Project 4 -->
           <div class="project-card">
             <img src="images/retail-analytics.jpg" alt="Retail Analytics Pipeline">
             <h3>Retail Analytics Pipeline</h3>
-            <p>Built an end-to-end retail analytics pipeline using Apache Airflow and AWS, processing large-scale transaction data to generate insights for inventory optimization and customer behavior analysis.</p>
+            <p>End-to-end retail analytics pipeline using Apache Airflow and AWS, processing large-scale transaction data for inventory optimization.</p>
             <a href="https://github.com/kumarbaibhav6/retail-analytics" target="_blank">View on GitHub →</a>
           </div>
 
-          <!-- Project 5 -->
           <div class="project-card">
             <img src="images/agentic-medbot.jpg" alt="Agentic MedBot">
             <h3>Agentic MedBot</h3>
-            <p>Developed an intelligent medical assistant using GPT-4 and RAG architecture with OpenAI embeddings, providing accurate medical information retrieval and automated patient query resolution with contextual understanding.</p>
+            <p>Intelligent medical assistant using GPT-4 and RAG architecture with OpenAI embeddings for accurate medical information retrieval.</p>
             <a href="https://github.com/kumarbaibhav6/agentic-medbot" target="_blank">View on GitHub →</a>
           </div>
 
-          <!-- Project 6 -->
           <div class="project-card">
-            <img src="images/sentiment-analysis.jpg" alt="Sentiment Analysis on Customer Reviews">
+            <img src="images/sentiment-analysis.jpg" alt="Sentiment Analysis">
             <h3>Sentiment Analysis on Customer Reviews</h3>
-            <p>Built a comprehensive sentiment analysis system using LSTM and fine-tuned BERT models, achieving 87.5% accuracy in customer review classification with advanced text preprocessing and contextual understanding.</p>
+            <p>Comprehensive sentiment analysis using LSTM and fine-tuned BERT models, achieving 87.5% accuracy in customer review classification.</p>
             <a href="https://github.com/kumarbaibhav6/Sentiment-Analysis" target="_blank">View on GitHub →</a>
           </div>
-        </div>
-      </section>
-
-      <!-- Work Experience Section -->
-      <section id="experience" class="experience-section">
-        <h2>Work Experience</h2>
-        
-        <div class="experience-item">
-          <h3>Software Engineer AI/ML - Spillbox</h3>
-          <p><strong>Feb 2025 - Present</strong> • San Jose, CA</p>
-          <p>Developed a GPT-4o-mini powered AI assistant with RAG pipeline using OpenAI embeddings and FAISS, reducing response time to under 5 seconds and customer support costs by 80%. Deployed on AWS EC2 using FastAPI, enabling concurrent support for ~50 users while leading end-to-end AI lifecycle and automating training processes.</p>
-        </div>
-
-        <div class="experience-item">
-          <h3>Data Scientist - Baldwin Richardson Foods Co.</h3>
-          <p><strong>Aug 2024 - Dec 2024</strong> • Buffalo, NY</p>
-          <p>Built time series forecasting models (ARIMA, Prophet) using 14 years of sales data, achieving 90% accuracy across 20+ SKUs and reducing stockouts by 15%. Led model development in a 4-member team, delivering data-backed recommendations that contributed ~$800K in revenue opportunity and 8.5% projected sales growth.</p>
-        </div>
-
-        <div class="experience-item">
-          <h3>Data Science Intern - StatSkew</h3>
-          <p><strong>Mar 2023 - May 2023</strong> • Remote</p>
-          <p>Automated product data scraping using Python and Selenium, reducing manual collection time by 20%. Built classification models to predict health insurance purchases, increasing model accuracy from 60% to 85% through class imbalance handling with SMOTE.</p>
-        </div>
-
-        <div class="experience-item">
-          <h3>Research Data Analyst - VRC Constructions</h3>
-          <p><strong>Jan 2022 - Jun 2022</strong> • Manipal, India</p>
-          <p>Analyzed 1,000+ procurement and on-site logs using Python to uncover weather and equipment-related delays, reducing project lead time by 36.4% and saving $18K. Performed ABC inventory analysis, identifying $31K in unused stock and reducing waste by 3.3%.</p>
-        </div>
-      </section>
-
-      <!-- Education Section -->
-      <section id="education" class="education-section">
-        <h2>Education</h2>
-        <div class="education-item">
-          <h3>Master of Professional Studies in Data Science</h3>
-          <p><strong>University at Buffalo (SUNY)</strong>, Aug 2023 - Dec 2024</p>
-          <p>GPA: 4.0/4.0</p>
-          <p>Coursework: Machine Learning, Data Mining, Probability & Statistics, Database Management Systems</p>
-        </div>
-
-        <div class="education-item">
-          <h3>Bachelor of Technology in Civil Engineering</h3>
-          <p><strong>Manipal Institute of Technology (MAHE)</strong>, Jul 2018 - Jun 2022</p>
-          <p>GPA: 3.54/4.0 (8.57/10)</p>
         </div>
       </section>
     </main>

@@ -1,353 +1,314 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kumar Baibhav Portfolio</title>
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #3498db;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section h1 {
+  font-size: 24px;
+  color: #3498db;
+  margin: 0 0 5px 0;
+}
+
+.job-title {
+  color: #666;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.location {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.icons a {
+  margin: 0 8px;
+  color: #3498db;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.icons a:hover {
+  color: #e74c3c;
+}
+
+/* Sidebar Sections */
+.sidebar section {
+  margin-bottom: 25px;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  color: #3498db;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 5px;
+}
+
+.sidebar p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Skills */
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skills-tags span {
+  background-color: #8e44ad;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 11px;
+  transition: transform 0.3s ease;
+}
+
+.skills-tags span:hover {
+  transform: scale(1.05);
+  background-color: #9b59b6;
+}
+
+/* Main Content */
+.content {
+  display: grid;
+  gap: 30px;
+  grid-template-rows: auto auto auto;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #3498db 0%, #8e44ad 100%);
+  color: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.hero-section p {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Two Column Layout for Experience & Education */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.info-section {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.info-section h2 {
+  color: #3498db;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.info-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #3498db;
+}
+
+.info-item h3 {
+  color: #3498db;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.info-item .meta {
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.info-item p {
+  color: #555;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Projects Section */
+.projects-section {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.projects-section h2 {
+  color: #3498db;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  color: #3498db;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.project-card p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.project-card a {
+  color: #e74c3c;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.project-card a:hover {
+  color: #3498db;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #3498db;
+  color: white;
+  font-size: 14px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: 280px 1fr;
+  }
   
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
   
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    
-    <style>
-      /* General Styles */
-      body {
-        font-family: 'Poppins', sans-serif;
-        margin: 0;
-        background-color: #f4f6f9; /* Light background */
-        color: #333;
-      }
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
 
-      .container {
-        display: flex;
-        flex-direction: row;
-        padding: 20px;
-        gap: 40px;
-      }
-
-      .sidebar {
-        width: 25%;
-        background-color: #ffffff; /* White sidebar */
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-      }
-
-      .content {
-        width: 75%;
-        padding: 20px;
-        background-color: #ffffff; /* White content */
-        border-radius: 12px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-      }
-
-      /* Profile Section */
-      .profile-section {
-        text-align: center;
-        margin-bottom: 40px;
-      }
-
-      .profile-picture {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        border: 5px solid #3498db; /* Blue border around picture */
-        margin-bottom: 20px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      }
-
-      .profile-section h1 {
-        font-size: 28px;
-        color: #3498db; /* Blue color for name */
-        margin: 0;
-      }
-
-      .job-title,
-      .location {
-        color: #888;
-        font-size: 16px;
-      }
-
-      .icons a {
-        margin: 0 10px;
-        color: #3498db; /* Blue icons */
-        font-size: 1.6rem;
-        transition: color 0.3s ease;
-      }
-
-      .icons a:hover {
-        color: #e74c3c; /* Red hover effect on icons */
-      }
-
-      /* Skills Section */
-      .skills-tags span {
-        display: inline-block;
-        background-color: #8e44ad; /* Purple background for skills */
-        color: white;
-        padding: 8px 16px;
-        border-radius: 20px;
-        margin: 5px;
-        font-size: 14px;
-        transition: transform 0.3s ease;
-      }
-
-      .skills-tags span:hover {
-        transform: scale(1.1);
-        background-color: #9b59b6; /* Slightly lighter purple on hover */
-      }
-
-      /* Grid Layout for Projects */
-      .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        margin-top: 30px;
-        grid-auto-rows: minmax(200px, auto);
-      }
-
-      .project-card {
-        background-color: white;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
-        transition: transform 0.3s ease;
-      }
-
-      .project-card:hover {
-        transform: translateY(-10px);
-      }
-
-      .project-card img {
-        width: 100%;
-        height: 180px;
-        object-fit: cover;
-        border-radius: 8px;
-        margin-bottom: 15px;
-      }
-
-      .project-card h3 {
-        color: #3498db; /* Blue color for project titles */
-        margin-bottom: 10px;
-        font-size: 18px;
-        font-weight: 600;
-      }
-
-      .project-card a {
-        color: #e74c3c; /* Red links */
-        font-size: 14px;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.3s ease;
-      }
-
-      .project-card a:hover {
-        color: #3498db; /* Blue hover effect for links */
-      }
-
-      /* Work Experience Section */
-      .experience-section,
-      .education-section {
-        margin-top: 30px;
-      }
-
-      .experience-item,
-      .education-item {
-        background-color: white;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-        margin-bottom: 25px;
-      }
-
-      .experience-item h3,
-      .education-item h3 {
-        color: #3498db; /* Blue for section titles */
-        margin-bottom: 10px;
-      }
-
-      .experience-item p,
-      .education-item p {
-        color: #555;
-        font-size: 16px;
-      }
-
-      /* Footer */
-      footer {
-        text-align: center;
-        padding: 10px 20px;  /* Reduced padding */
-        background-color: #3498db;  /* Blue footer */
-        color: white;
-        font-size: 12px;  /* Smaller font size for footer text */
-        border-top: 2px solid #2980b9;  /* Slightly darker blue for border */
-        position: relative;  /* Remove fixed position */
-        bottom: 0;
-        width: 100%;
-      }
-
-      /* Responsive Layout for Projects */
-      @media (max-width: 1024px) {
-        .projects-grid {
-          grid-template-columns: repeat(2, 1fr); /* 2 columns for medium-sized screens */
-        }
-      }
-
-      @media (max-width: 768px) {
-        .projects-grid {
-          grid-template-columns: 1fr; /* 1 column for small screens */
-        }
-      }
-    </style>
-  </head>  
-<body>
-  <div class="container">
-    <!-- Left Sidebar -->
-    <aside class="sidebar">
-      <div class="profile-section">
-        <img src="images/profile.jpg" alt="Profile Picture" class="profile-picture">
-        <h1>Kumar Baibhav</h1>
-        <p class="job-title">Software Engineer AI/ML</p>
-        <p class="location">Buffalo, NY</p>
-        <div class="icons">
-          <a href="mailto:baibhav06june@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-          <a href="https://linkedin.com/in/kumarbaibhav66" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/kumarbaibhav6" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-      </div>
-
-      <!-- About Section -->
-      <section id="about">
-        <h2>About</h2>
-        <p>I'm Kumar Baibhav — a Software Engineer specializing in AI/ML with hands-on experience building production-grade machine learning systems and intelligent AI assistants. With a perfect 4.0 GPA from the University at Buffalo's Data Science program, I excel at developing end-to-end ML pipelines, deploying scalable AI applications, and transforming complex data into actionable business insights. My expertise spans from time series forecasting and NLP to generative AI and RAG-powered assistants. I've delivered impactful solutions across retail, healthcare, and fintech domains, leveraging technologies like FastAPI, AWS, Docker, and advanced ML frameworks. From reducing customer support costs by 80% with AI assistants to generating $800K in revenue opportunities through predictive analytics, I build intelligent systems that drive real business value.</p>
-      </section>
-
-      <!-- Skills Section -->
-      <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-tags">
-          <span>Python</span><span>R</span><span>PostgreSQL</span><span>AWS</span><span>Machine Learning</span><span>Deep Learning</span>
-          <span>NLP</span><span>Time Series Forecasting</span><span>FastAPI</span><span>Docker</span><span>TensorFlow</span><span>PyTorch</span>
-          <span>Scikit-Learn</span><span>LangChain</span><span>OpenAI</span><span>RAG Pipelines</span><span>MLFlow</span><span>Databricks</span>
-          <span>PySpark</span><span>CI/CD</span><span>Kubernetes</span><span>Linux</span>
-        </div>
-      </section>
-
-      <!-- Resume Link -->
-      <section id="resume">
-        <h2>Resume</h2>
-        <p><a href="https://github.com/kumarbaibhav6/Portfolio/blob/main/Kumar_Baibhav_Resume.pdf" target="_blank">Download My Resume</a></p>
-      </section>
-    </aside>
-
-    <!-- Main Content -->
-    <main class="content">
-      <!-- Projects Section -->
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-          <!-- Project 1 -->
-          <div class="project-card">
-            <img src="images/bike-sharing.jpg" alt="Bike Sharing Demand Prediction">
-            <h3>Bike Sharing Demand Prediction</h3>
-            <p>Built a real-time prediction pipeline using AWS Kinesis and FastAPI with a hyperparameter-tuned Random Forest model, achieving 90% accuracy and enabling 30% increase in bike reallocation efficiency.</p>
-            <a href="https://github.com/kumarbaibhav6/Bike-Sharing-Demand-Prediction" target="_blank">View on GitHub →</a>
-          </div>
-
-          <!-- Project 2 -->
-          <div class="project-card">
-            <img src="images/cardio-risk.jpg" alt="Cardiovascular Risk Prediction">
-            <h3>Cardiovascular Risk Prediction</h3>
-            <p>Developed a cardiovascular risk prediction model using Random Forest, GBM, and CatBoost, improving early detection of high-risk patients by 60% with automated Docker deployment and real-time Streamlit UI.</p>
-            <a href="https://github.com/kumarbaibhav6/Cardiovascular-Risk-Prediction" target="_blank">View on GitHub →</a>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="project-card">
-            <img src="images/fraud-detection.jpg" alt="Fraud Detection in Credit Card Transactions">
-            <h3>Fraud Detection in Credit Card Transactions</h3>
-            <p>Enhanced fraud detection on 1M+ transactions using PySpark and Databricks, improving identification of fraudulent transactions by 40% through advanced feature engineering and class imbalance handling.</p>
-            <a href="https://github.com/kumarbaibhav6/credit-card-fraud" target="_blank">View on GitHub →</a>
-          </div>
-
-          <!-- Project 4 -->
-          <div class="project-card">
-            <img src="images/retail-analytics.jpg" alt="Retail Analytics Pipeline">
-            <h3>Retail Analytics Pipeline</h3>
-            <p>Built an end-to-end retail analytics pipeline using Apache Airflow and AWS, processing large-scale transaction data to generate insights for inventory optimization and customer behavior analysis.</p>
-            <a href="https://github.com/kumarbaibhav6/retail-analytics" target="_blank">View on GitHub →</a>
-          </div>
-
-          <!-- Project 5 -->
-          <div class="project-card">
-            <img src="images/agentic-medbot.jpg" alt="Agentic MedBot">
-            <h3>Agentic MedBot</h3>
-            <p>Developed an intelligent medical assistant using GPT-4 and RAG architecture with OpenAI embeddings, providing accurate medical information retrieval and automated patient query resolution with contextual understanding.</p>
-            <a href="https://github.com/kumarbaibhav6/agentic-medbot" target="_blank">View on GitHub →</a>
-          </div>
-
-          <!-- Project 6 -->
-          <div class="project-card">
-            <img src="images/sentiment-analysis.jpg" alt="Sentiment Analysis on Customer Reviews">
-            <h3>Sentiment Analysis on Customer Reviews</h3>
-            <p>Built a comprehensive sentiment analysis system using LSTM and fine-tuned BERT models, achieving 87.5% accuracy in customer review classification with advanced text preprocessing and contextual understanding.</p>
-            <a href="https://github.com/kumarbaibhav6/Sentiment-Analysis" target="_blank">View on GitHub →</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Work Experience Section -->
-      <section id="experience" class="experience-section">
-        <h2>Work Experience</h2>
-        
-        <div class="experience-item">
-          <h3>Software Engineer AI/ML - Spillbox</h3>
-          <p><strong>Feb 2025 - Present</strong> • San Jose, CA</p>
-          <p>Developed a GPT-4o-mini powered AI assistant with RAG pipeline using OpenAI embeddings and FAISS, reducing response time to under 5 seconds and customer support costs by 80%. Deployed on AWS EC2 using FastAPI, enabling concurrent support for ~50 users while leading end-to-end AI lifecycle and automating training processes.</p>
-        </div>
-
-        <div class="experience-item">
-          <h3>Data Scientist - Baldwin Richardson Foods Co.</h3>
-          <p><strong>Aug 2024 - Dec 2024</strong> • Buffalo, NY</p>
-          <p>Built time series forecasting models (ARIMA, Prophet) using 14 years of sales data, achieving 90% accuracy across 20+ SKUs and reducing stockouts by 15%. Led model development in a 4-member team, delivering data-backed recommendations that contributed ~$800K in revenue opportunity and 8.5% projected sales growth.</p>
-        </div>
-
-        <div class="experience-item">
-          <h3>Data Science Intern - StatSkew</h3>
-          <p><strong>Mar 2023 - May 2023</strong> • Remote</p>
-          <p>Automated product data scraping using Python and Selenium, reducing manual collection time by 20%. Built classification models to predict health insurance purchases, increasing model accuracy from 60% to 85% through class imbalance handling with SMOTE.</p>
-        </div>
-
-        <div class="experience-item">
-          <h3>Research Data Analyst - VRC Constructions</h3>
-          <p><strong>Jan 2022 - Jun 2022</strong> • Manipal, India</p>
-          <p>Analyzed 1,000+ procurement and on-site logs using Python to uncover weather and equipment-related delays, reducing project lead time by 36.4% and saving $18K. Performed ABC inventory analysis, identifying $31K in unused stock and reducing waste by 3.3%.</p>
-        </div>
-      </section>
-
-      <!-- Education Section -->
-      <section id="education" class="education-section">
-        <h2>Education</h2>
-        <div class="education-item">
-          <h3>Master of Professional Studies in Data Science</h3>
-          <p><strong>University at Buffalo (SUNY)</strong>, Aug 2023 - Dec 2024</p>
-          <p>GPA: 4.0/4.0</p>
-          <p>Coursework: Machine Learning, Data Mining, Probability & Statistics, Database Management Systems</p>
-        </div>
-
-        <div class="education-item">
-          <h3>Bachelor of Technology in Civil Engineering</h3>
-          <p><strong>Manipal Institute of Technology (MAHE)</strong>, Jul 2018 - Jun 2022</p>
-          <p>GPA: 3.54/4.0 (8.57/10)</p>
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Kumar Baibhav. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .sidebar {
+    position: static;
+  }
+  
+  .hero-section h1 {
+    font-size: 28px;
+  }
+  
+  .hero-section p {
+    font-size: 16px;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
