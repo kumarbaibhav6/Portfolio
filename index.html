@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>  
 <body>
   <div class="container">
@@ -22,142 +22,368 @@
         <img src="images/profile.jpg" alt="Profile Picture" class="profile-picture">
         <h1>Kumar Baibhav</h1>
         <p class="job-title">Software Engineer AI/ML</p>
-        <p class="location">Buffalo, NY</p>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> Buffalo, NY</p>
         <div class="icons">
-          <a href="mailto:baibhav06june@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-          <a href="https://linkedin.com/in/kumarbaibhav66" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/kumarbaibhav6" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="mailto:baibhav06june@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://linkedin.com/in/kumarbaibhav66" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/kumarbaibhav6" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </div>
 
-      <!-- About Section -->
-      <section id="about">
-        <h2>About</h2>
-        <p>AI/ML Engineer with expertise in production-grade systems, RAG pipelines, and intelligent assistants. Perfect 4.0 GPA from UB's Data Science program.</p>
+      <!-- Quick Stats -->
+      <section class="quick-stats">
+        <h2><i class="fas fa-chart-line"></i> Quick Stats</h2>
+        <div class="stat-item">
+          <span class="stat-number">4.0</span>
+          <span class="stat-label">GPA</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">80%</span>
+          <span class="stat-label">Cost Reduction</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">$800K</span>
+          <span class="stat-label">Revenue Impact</span>
+        </div>
       </section>
 
       <!-- Skills Section -->
       <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-tags">
-          <span>Python</span><span>AWS</span><span>Machine Learning</span><span>Deep Learning</span>
-          <span>NLP</span><span>FastAPI</span><span>Docker</span><span>TensorFlow</span><span>PyTorch</span>
-          <span>LangChain</span><span>OpenAI</span><span>RAG</span><span>MLFlow</span><span>PySpark</span>
-          <span>CI/CD</span><span>Kubernetes</span>
+        <h2><i class="fas fa-code"></i> Core Skills</h2>
+        <div class="skills-categories">
+          <div class="skill-category">
+            <h4>AI/ML</h4>
+            <div class="skills-tags">
+              <span>Python</span><span>TensorFlow</span><span>PyTorch</span><span>LangChain</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Cloud & DevOps</h4>
+            <div class="skills-tags">
+              <span>AWS</span><span>Docker</span><span>Kubernetes</span><span>CI/CD</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Data & Analytics</h4>
+            <div class="skills-tags">
+              <span>PySpark</span><span>MLFlow</span><span>Databricks</span><span>FastAPI</span>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Resume Link -->
       <section id="resume">
-        <h2>Resume</h2>
-        <p><a href="https://github.com/kumarbaibhav6/Portfolio/blob/main/Kumar_Baibhav_Resume.pdf" target="_blank" style="color: #3498db; text-decoration: none; font-weight: 500;">Download My Resume →</a></p>
+        <a href="https://github.com/kumarbaibhav6/Portfolio/blob/main/Kumar_Baibhav_Resume.pdf" target="_blank" class="resume-btn">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
       </section>
     </aside>
 
     <!-- Main Content -->
     <main class="content">
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <h1>Building Intelligent AI Systems</h1>
-        <p>Transforming complex data into actionable business insights through cutting-edge AI/ML engineering. From reducing customer support costs by 80% with RAG-powered assistants to generating $800K revenue opportunities through predictive analytics.</p>
-      </section>
+      <!-- Navigation Tabs -->
+      <nav class="tab-navigation">
+        <button class="tab-btn active" onclick="showTab('home')">
+          <i class="fas fa-home"></i> Home
+        </button>
+        <button class="tab-btn" onclick="showTab('projects')">
+          <i class="fas fa-project-diagram"></i> Projects
+        </button>
+      </nav>
 
-      <!-- Experience & Education Grid -->
-      <div class="info-grid">
-        <!-- Work Experience -->
-        <div class="info-section">
-          <h2>Experience</h2>
-          
-          <div class="info-item">
-            <h3>Software Engineer AI/ML - Spillbox</h3>
-            <p class="meta">Feb 2025 - Present • San Jose, CA</p>
-            <p>Developed GPT-4o-mini powered AI assistant with RAG pipeline, reducing response time to under 5 seconds and support costs by 80%.</p>
+      <!-- Home Tab Content -->
+      <div id="home-tab" class="tab-content active">
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-content">
+            <h1>Building Intelligent AI Systems That Drive Business Value</h1>
+            <p class="hero-description">
+              AI/ML Engineer specializing in production-grade systems, RAG pipelines, and intelligent assistants. 
+              Transforming complex data into actionable business insights with proven track record of 
+              <strong>80% cost reduction</strong> and <strong>$800K revenue generation</strong>.
+            </p>
+            <div class="hero-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-robot"></i>
+                <span>RAG-Powered AI Assistants</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Predictive Analytics</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-cloud"></i>
+                <span>Production ML Systems</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Value Created Section -->
+        <section class="value-section">
+          <h2><i class="fas fa-trophy"></i> Value Created</h2>
+          <div class="value-grid">
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+              <h3>$800K Revenue Opportunity</h3>
+              <p>Led time series forecasting models achieving 90% accuracy, contributing significant revenue growth through data-backed product recommendations.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-cut"></i>
+              </div>
+              <h3>80% Cost Reduction</h3>
+              <p>Developed GPT-4o-mini powered AI assistant with RAG pipeline, reducing customer support costs and response time to under 5 seconds.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>40% Fraud Detection Improvement</h3>
+              <p>Enhanced fraud detection on 1M+ transactions using advanced feature engineering and class imbalance handling techniques.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3>36% Lead Time Reduction</h3>
+              <p>Analyzed procurement logs to uncover delays, optimizing scheduling and saving $18K through better resource management.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience & Education Grid -->
+        <div class="info-grid">
+          <!-- Work Experience -->
+          <div class="info-section">
+            <h2><i class="fas fa-briefcase"></i> Experience</h2>
+            
+            <div class="info-item current">
+              <div class="company-logo">
+                <i class="fas fa-building"></i>
+              </div>
+              <div class="info-details">
+                <h3>Software Engineer AI/ML</h3>
+                <h4>Spillbox</h4>
+                <p class="meta">Feb 2025 - Present • San Jose, CA</p>
+                <p>Developed GPT-4o-mini powered AI assistant with RAG pipeline using OpenAI embeddings and FAISS. Reduced response time to under 5 seconds and customer support costs by 80%.</p>
+                <div class="achievements">
+                  <span class="achievement-tag">RAG Pipeline</span>
+                  <span class="achievement-tag">Cost Reduction 80%</span>
+                  <span class="achievement-tag">AWS EC2</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="company-logo">
+                <i class="fas fa-chart-bar"></i>
+              </div>
+              <div class="info-details">
+                <h3>Data Scientist</h3>
+                <h4>Baldwin Richardson Foods</h4>
+                <p class="meta">Aug 2024 - Dec 2024 • Buffalo, NY</p>
+                <p>Built time series forecasting models (ARIMA, Prophet) achieving 90% accuracy across 20+ SKUs. Led 4-member team delivering recommendations worth ~$800K revenue opportunity.</p>
+                <div class="achievements">
+                  <span class="achievement-tag">Revenue $800K</span>
+                  <span class="achievement-tag">Team Leadership</span>
+                  <span class="achievement-tag">Time Series</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="company-logo">
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="info-details">
+                <h3>Data Science Intern</h3>
+                <h4>StatSkew</h4>
+                <p class="meta">Mar 2023 - May 2023 • Remote</p>
+                <p>Increased model accuracy from 60% to 85% through class imbalance handling with SMOTE for insurance prediction models.</p>
+                <div class="achievements">
+                  <span class="achievement-tag">Accuracy +25%</span>
+                  <span class="achievement-tag">SMOTE</span>
+                  <span class="achievement-tag">Classification</span>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="info-item">
-            <h3>Data Scientist - Baldwin Richardson Foods</h3>
-            <p class="meta">Aug 2024 - Dec 2024 • Buffalo, NY</p>
-            <p>Built time series forecasting models achieving 90% accuracy, contributing ~$800K revenue opportunity and 8.5% projected growth.</p>
-          </div>
+          <!-- Education -->
+          <div class="info-section">
+            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+            
+            <div class="info-item featured">
+              <div class="education-logo">
+                <i class="fas fa-university"></i>
+              </div>
+              <div class="info-details">
+                <h3>Master of Professional Studies in Data Science</h3>
+                <h4>University at Buffalo (SUNY)</h4>
+                <p class="meta">Aug 2023 - Dec 2024</p>
+                <div class="gpa-highlight">
+                  <span class="gpa-badge">GPA: 4.0/4.0</span>
+                </div>
+                <p><strong>Coursework:</strong> Machine Learning, Data Mining, Probability & Statistics, Database Management Systems</p>
+                <div class="achievements">
+                  <span class="achievement-tag">Perfect GPA</span>
+                  <span class="achievement-tag">Dean's List</span>
+                </div>
+              </div>
+            </div>
 
-          <div class="info-item">
-            <h3>Data Science Intern - StatSkew</h3>
-            <p class="meta">Mar 2023 - May 2023 • Remote</p>
-            <p>Increased model accuracy from 60% to 85% through class imbalance handling with SMOTE for insurance prediction models.</p>
-          </div>
-        </div>
+            <div class="info-item">
+              <div class="education-logo">
+                <i class="fas fa-school"></i>
+              </div>
+              <div class="info-details">
+                <h3>Bachelor of Technology in Civil Engineering</h3>
+                <h4>Manipal Institute of Technology (MAHE)</h4>
+                <p class="meta">Jul 2018 - Jun 2022</p>
+                <div class="gpa-highlight">
+                  <span class="gpa-badge">GPA: 3.54/4.0</span>
+                </div>
+                <div class="achievements">
+                  <span class="achievement-tag">Engineering Foundation</span>
+                </div>
+              </div>
+            </div>
 
-        <!-- Education -->
-        <div class="info-section">
-          <h2>Education</h2>
-          
-          <div class="info-item">
-            <h3>Master of Professional Studies in Data Science</h3>
-            <p class="meta">University at Buffalo (SUNY) • Dec 2024</p>
-            <p><strong>GPA: 4.0/4.0</strong><br>
-            Coursework: Machine Learning, Data Mining, Probability & Statistics, Database Management Systems</p>
-          </div>
-
-          <div class="info-item">
-            <h3>Bachelor of Technology in Civil Engineering</h3>
-            <p class="meta">Manipal Institute of Technology (MAHE) • Jun 2022</p>
-            <p><strong>GPA: 3.54/4.0 (8.57/10)</strong></p>
+            <!-- Certifications -->
+            <div class="certifications">
+              <h4><i class="fas fa-certificate"></i> Certifications</h4>
+              <div class="cert-list">
+                <span class="cert-item">AWS Certified</span>
+                <span class="cert-item">Google Cloud</span>
+                <span class="cert-item">TensorFlow Developer</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Projects Section -->
-      <section class="projects-section">
-        <h2>Featured Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <img src="images/bike-sharing.jpg" alt="Bike Sharing Demand Prediction">
-            <h3>Bike Sharing Demand Prediction</h3>
-            <p>Real-time prediction pipeline using AWS Kinesis and FastAPI with Random Forest model, achieving 90% accuracy and 30% efficiency increase.</p>
-            <a href="https://github.com/kumarbaibhav6/Bike-Sharing-Demand-Prediction" target="_blank">View on GitHub →</a>
+      <!-- Projects Tab Content -->
+      <div id="projects-tab" class="tab-content">
+        <section class="projects-section">
+          <div class="projects-header">
+            <h2><i class="fas fa-project-diagram"></i> Featured Projects</h2>
+            <p>Showcasing end-to-end AI/ML solutions with real business impact</p>
           </div>
+          
+          <div class="projects-grid">
+            <div class="project-card">
+              <img src="images/bike-sharing.jpg" alt="Bike Sharing Demand Prediction">
+              <div class="project-content">
+                <h3>Bike Sharing Demand Prediction</h3>
+                <p>Real-time prediction pipeline using AWS Kinesis and FastAPI with Random Forest model, achieving 90% accuracy and 30% efficiency increase.</p>
+                <div class="tech-stack">
+                  <span>Python</span><span>AWS</span><span>FastAPI</span><span>Random Forest</span>
+                </div>
+                <a href="https://github.com/kumarbaibhav6/Bike-Sharing-Demand-Prediction" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </div>
 
-          <div class="project-card">
-            <img src="images/cardio-risk.jpg" alt="Cardiovascular Risk Prediction">
-            <h3>Cardiovascular Risk Prediction</h3>
-            <p>Deployed cardiovascular risk prediction model using Random Forest and CatBoost, improving early detection by 60% with real-time Streamlit UI.</p>
-            <a href="https://github.com/kumarbaibhav6/Cardiovascular-Risk-Prediction" target="_blank">View on GitHub →</a>
-          </div>
+            <div class="project-card">
+              <img src="images/cardio-risk.jpg" alt="Cardiovascular Risk Prediction">
+              <div class="project-content">
+                <h3>Cardiovascular Risk Prediction</h3>
+                <p>Deployed cardiovascular risk prediction model using Random Forest and CatBoost, improving early detection by 60% with real-time Streamlit UI.</p>
+                <div class="tech-stack">
+                  <span>Python</span><span>Docker</span><span>Streamlit</span><span>CatBoost</span>
+                </div>
+                <a href="https://github.com/kumarbaibhav6/Cardiovascular-Risk-Prediction" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </div>
 
-          <div class="project-card">
-            <img src="images/fraud-detection.jpg" alt="Fraud Detection">
-            <h3>Fraud Detection in Credit Card Transactions</h3>
-            <p>Enhanced fraud detection on 1M+ transactions using PySpark and Databricks, improving identification by 40% through feature engineering.</p>
-            <a href="https://github.com/kumarbaibhav6/credit-card-fraud" target="_blank">View on GitHub →</a>
-          </div>
+            <div class="project-card">
+              <img src="images/fraud-detection.jpg" alt="Fraud Detection">
+              <div class="project-content">
+                <h3>Fraud Detection in Credit Card Transactions</h3>
+                <p>Enhanced fraud detection on 1M+ transactions using PySpark and Databricks, improving identification by 40% through feature engineering.</p>
+                <div class="tech-stack">
+                  <span>PySpark</span><span>Databricks</span><span>Random Forest</span><span>Feature Engineering</span>
+                </div>
+                <a href="https://github.com/kumarbaibhav6/credit-card-fraud" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </div>
 
-          <div class="project-card">
-            <img src="images/retail-analytics.jpg" alt="Retail Analytics Pipeline">
-            <h3>Retail Analytics Pipeline</h3>
-            <p>End-to-end retail analytics pipeline using Apache Airflow and AWS, processing large-scale transaction data for inventory optimization.</p>
-            <a href="https://github.com/kumarbaibhav6/retail-analytics" target="_blank">View on GitHub →</a>
-          </div>
+            <div class="project-card">
+              <img src="images/retail-analytics.jpg" alt="Retail Analytics Pipeline">
+              <div class="project-content">
+                <h3>Retail Analytics Pipeline</h3>
+                <p>End-to-end retail analytics pipeline using Apache Airflow and AWS, processing large-scale transaction data for inventory optimization.</p>
+                <div class="tech-stack">
+                  <span>Apache Airflow</span><span>AWS</span><span>ETL</span><span>Analytics</span>
+                </div>
+                <a href="https://github.com/kumarbaibhav6/retail-analytics" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </div>
 
-          <div class="project-card">
-            <img src="images/agentic-medbot.jpg" alt="Agentic MedBot">
-            <h3>Agentic MedBot</h3>
-            <p>Intelligent medical assistant using GPT-4 and RAG architecture with OpenAI embeddings for accurate medical information retrieval.</p>
-            <a href="https://github.com/kumarbaibhav6/agentic-medbot" target="_blank">View on GitHub →</a>
-          </div>
+            <div class="project-card">
+              <img src="images/agentic-medbot.jpg" alt="Agentic MedBot">
+              <div class="project-content">
+                <h3>Agentic MedBot</h3>
+                <p>Intelligent medical assistant using GPT-4 and RAG architecture with OpenAI embeddings for accurate medical information retrieval.</p>
+                <div class="tech-stack">
+                  <span>GPT-4</span><span>RAG</span><span>OpenAI</span><span>LangChain</span>
+                </div>
+                <a href="https://github.com/kumarbaibhav6/agentic-medbot" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </div>
 
-          <div class="project-card">
-            <img src="images/sentiment-analysis.jpg" alt="Sentiment Analysis">
-            <h3>Sentiment Analysis on Customer Reviews</h3>
-            <p>Comprehensive sentiment analysis using LSTM and fine-tuned BERT models, achieving 87.5% accuracy in customer review classification.</p>
-            <a href="https://github.com/kumarbaibhav6/Sentiment-Analysis" target="_blank">View on GitHub →</a>
+            <div class="project-card">
+              <img src="images/sentiment-analysis.jpg" alt="Sentiment Analysis">
+              <div class="project-content">
+                <h3>Sentiment Analysis on Customer Reviews</h3>
+                <p>Comprehensive sentiment analysis using LSTM and fine-tuned BERT models, achieving 87.5% accuracy in customer review classification.</p>
+                <div class="tech-stack">
+                  <span>BERT</span><span>LSTM</span><span>NLP</span><span>TensorFlow</span>
+                </div>
+                <a href="https://github.com/kumarbaibhav6/Sentiment-Analysis" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
   </div>
 
   <footer>
-    <p>&copy; 2025 Kumar Baibhav. All rights reserved.</p>
+    <p>&copy; 2025 Kumar Baibhav. All rights reserved. • Built with ❤️ using modern web technologies</p>
   </footer>
+
+  <script>
+    function showTab(tabName) {
+      // Hide all tab contents
+      const tabContents = document.querySelectorAll('.tab-content');
+      tabContents.forEach(tab => tab.classList.remove('active'));
+      
+      // Remove active class from all buttons
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      
+      // Show selected tab content
+      document.getElementById(tabName + '-tab').classList.add('active');
+      
+      // Add active class to clicked button
+      event.target.classList.add('active');
+    }
+  </script>
 </body>
 </html>
